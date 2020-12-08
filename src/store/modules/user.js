@@ -6,12 +6,15 @@ const state = () => ({
   logged_in: false
 });
 const getters = {
-  loggedIn: (state) => state.logged_in,
+  loggedIn: state => state.logged_in
 };
 const actions = {
   login(ctx, payload) {
-     ctx.commit("ON_LOGIN_SUCCESS", payload);
+    ctx.commit("ON_LOGIN_SUCCESS", payload);
   },
+  logout({ commit }) {
+    commit("LOG_OUT");
+  }
 };
 const mutations = {
   ON_LOGIN_SUCCESS(state, payload) {
@@ -25,6 +28,9 @@ const mutations = {
       alert("Invalid password or/and username");
     }
   },
+  LOG_OUT(state) {
+    state.logged_in = false;
+  }
 };
 
 export default {
@@ -32,5 +38,5 @@ export default {
   state,
   getters,
   actions,
-  mutations,
+  mutations
 };

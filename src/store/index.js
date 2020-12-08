@@ -1,14 +1,16 @@
 import Vue from "vue";
 import Vuex from "vuex";
-import customer from "./modules/customer";
 import user from "./modules/user";
+import station from "./modules/station";
+import customer from "./modules/customer";
 
 Vue.use(Vuex);
 
 const store = new Vuex.Store({
   modules: {
-    customer,
-    user
+    user,
+    station,
+    customer
   }
 });
 
