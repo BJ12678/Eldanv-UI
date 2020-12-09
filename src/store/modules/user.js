@@ -2,7 +2,7 @@ import router from "@/router";
 
 const state = () => ({
   username: "admin",
-  password: "password",
+  password: "eldan",
   logged_in: false
 });
 const getters = {
@@ -23,7 +23,7 @@ const mutations = {
       payload.password == state.password
     ) {
       state.logged_in = true;
-      router.push("/customer");
+      router.push("/station");
     } else {
       alert("Invalid password or/and username");
     }

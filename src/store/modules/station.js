@@ -1,11 +1,11 @@
 // import router from "@/router";
 
 const state = () => ({
-  employees: {
+  employee: {
     name: [],
-    sales: null,
-    containers: null,
-    customers: null,
+    sale: "",
+    container: "",
+    customers: []
   },
   total_containers: null,
   total_customers: null,
