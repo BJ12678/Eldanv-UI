@@ -1,12 +1,26 @@
 // import router from "@/router";
 
 const state = () => ({
-  employee: {
-    name: "",
-    sale: "",
-    container: "",
-    customers: []
-  }
+  info: [
+    {
+      name: "station",
+      sale: "123",
+      container: "",
+      customers: ""
+    },
+    {
+      name: "station",
+      sale: "123",
+      container: "",
+      customers: ""
+    },
+    {
+      name: "station",
+      sale: "123",
+      container: "",
+      customers: ""
+    }
+  ]
 });
 const getters = {};
 const actions = {};

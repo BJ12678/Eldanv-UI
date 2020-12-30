@@ -11,29 +11,13 @@
           <th>November</th>
           <th>December</th>
         </tr>
-        <tr>
-          <td>B.Sam</td>
-          <td>Smith</td>
-          <td>50</td>
-          <td>50</td>
-          <td>50</td>
-          <td>50</td>
-        </tr>
-        <tr>
-          <td>B.Anthony</td>
-          <td>Smith</td>
-          <td>50</td>
-          <td>50</td>
-          <td>50</td>
-          <td>50</td>
-        </tr>
-        <tr>
-          <td>Station</td>
-          <td>Smith</td>
-          <td>50</td>
-          <td>50</td>
-          <td>50</td>
-          <td>50</td>
+        <tr v-for="(item, index) in saleDetails" :key="index">
+          <td @click="editInfo">{{ item.name }}</td>
+          <td>{{ item.sale[0] }}</td>
+          <td>{{ item.sale[1] }}</td>
+          <td>{{ item.sale[2] }}</td>
+          <td>{{ item.sale[3] }}</td>
+          <td>{{ item.sale[4] }}</td>
         </tr>
         <tr>
           <td>Total</td>
@@ -93,6 +77,15 @@
     </div>
   </div>
 </template>
+
+<script>
+import { mapState } from "vuex";
+export default {
+  computed: {
+    ...mapState("station", { saleDetails: state => state.sale_details })
+  }
+};
+</script>
 
 <style scoped>
 .station {

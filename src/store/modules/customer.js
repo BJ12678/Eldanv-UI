@@ -1,12 +1,32 @@
 // import router from "@/router";
 
 const state = () => ({
-  customer: {
-    name: '',
-    area: '',
-    product_id:[],
-    container: ""
-  }
+  info: [
+    {
+      name: "B.Edil",
+      area: "Dalahican",
+      product_id: [],
+      container: "0"
+    },
+    {
+      name: "B.Edil",
+      area: "Dalahican",
+      product_id: [],
+      container: "0"
+    },
+    {
+      name: "B.Edil",
+      area: "Dalahican",
+      product_id: [],
+      container: "0"
+    },
+    {
+      name: "B.Edil",
+      area: "Dalahican",
+      product_id: [],
+      container: "0"
+    }
+  ]
 });
 const getters = {};
 const actions = {};
