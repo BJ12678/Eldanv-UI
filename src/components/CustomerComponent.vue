@@ -115,7 +115,7 @@
           <td>50</td>
           <td>50</td>
         </tr>
-                <tr>
+        <tr>
           <td>Jack</td>
           <td>Bayan</td>
           <td>50</td>
