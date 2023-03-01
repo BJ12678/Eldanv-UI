@@ -1,4 +1,4 @@
-# Eldanv3-UI
+# Eldan-UI
 
 ## Project setup
 ```
