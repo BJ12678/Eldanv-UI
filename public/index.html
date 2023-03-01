@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Eldan Water Station</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Login Form Dependencies  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/animate.css"> -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+
+
+</head>
+  <body>
+    <div id="app"></div>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!--Login Form Dependencies  -->
+    <script>
+      $(document).ready(function () {
+          $('#logo').addClass('animated fadeInDown');
+          $("input:text:visible:first").focus();
+      });
+      $('#username').focus(function() {
+        $('label[for="username"]').addClass('selected');
+      });
+      $('#username').blur(function() {
+        $('label[for="username"]').removeClass('selected');
+      });
+      $('#password').focus(function() {
+        $('label[for="password"]').addClass('selected');
+      });
+      $('#password').blur(function() {
+        $('label[for="password"]').removeClass('selected');
+      });
+    </script>
+
+  </body>
+</html>
